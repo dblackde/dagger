@@ -14,12 +14,18 @@ public class VehicleModule {
     @Provides
     @Singleton
     Motor provideMotor() {
-        return new Motor();
+        return new Motor("wan1");
     }
     @Provides
     @Singleton
     Vehicle provideVehicle(){
-        return new Vehicle(new Motor());
+        return new Vehicle(new Motor("wang"));
     }
+
+//    @Provides
+//    @Singleton
+//    Vehicle provideVehicle2(){
+//        return new Vehicle(new Motor());
+//    }
 
 }

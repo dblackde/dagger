@@ -10,5 +10,7 @@ import javax.inject.Singleton;
 @Singleton
 @Component(modules = {VehicleModule.class})
 public interface VehicleComponent {
+    void inject(Mian mian);
+
     Vehicle provideVehicle();
 }
